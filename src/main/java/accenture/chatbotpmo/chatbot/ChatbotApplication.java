@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.heroku;
+package accenture.chatbotpmo.chatbot;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -36,7 +36,7 @@ import java.util.Map;
 
 @Controller
 @SpringBootApplication
-public class HerokuApplication {
+public class ChatbotApplication {
 
   @Value("${spring.datasource.url}")
   private String dbUrl;
@@ -45,7 +45,7 @@ public class HerokuApplication {
   private DataSource dataSource;
 
   public static void main(String[] args) throws Exception {
-    SpringApplication.run(HerokuApplication.class, args);
+    SpringApplication.run(ChatbotApplication.class, args);
   }
 
   @RequestMapping("/")
