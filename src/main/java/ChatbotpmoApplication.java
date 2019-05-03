@@ -36,11 +36,11 @@ import java.util.Map;
 @SpringBootApplication
 public class ChatbotpmoApplication {
 
-  @Value("${spring.datasource.url}")
+  /*@Value("${spring.datasource.url}")
   private String dbUrl;
 
   @Autowired
-  private DataSource dataSource;
+  private DataSource dataSource;*/
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(ChatbotpmoApplication.class, args);
@@ -51,7 +51,7 @@ public class ChatbotpmoApplication {
     return "index";
   }
 
-  @RequestMapping("/db")
+  /*@RequestMapping("/db")
   String db(Map<String, Object> model) {
     try (Connection connection = dataSource.getConnection()) {
       Statement stmt = connection.createStatement();
@@ -81,6 +81,6 @@ public class ChatbotpmoApplication {
       config.setJdbcUrl(dbUrl);
       return new HikariDataSource(config);
     }
-  }
+  }*/
 
 }
