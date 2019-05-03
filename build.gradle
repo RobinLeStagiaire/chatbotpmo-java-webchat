@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.1.4.RELEASE'
+		springBootVersion = '2.1.2.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -16,7 +16,6 @@ apply plugin: 'io.spring.dependency-management'
 
 version = '1.0'
 sourceCompatibility = 1.8
-targetCompatibility = 1.8
 
 repositories {
 	mavenCentral()
